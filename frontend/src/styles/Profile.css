@@ -1,0 +1,48 @@
+/* Profile page styles */
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-box {
+  width: 420px;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  background: #fff;
+}
+
+.profile-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.profile-form .input-group {
+  margin-bottom: 12px;
+}
+
+.profile-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.profile-form .profile-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.profile-message {
+  margin-top: 12px;
+  text-align: center;
+  color: #2d3748;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-box {
+    width: 90%;
+    max-width: 420px;
+  }
+}

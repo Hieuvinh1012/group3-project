@@ -1,0 +1,53 @@
+/* Button styles */
+button {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #4b6cb7 0%, #182b49 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+  flex: 1;
+  max-width: 200px;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #355e9e 0%, #0f1c2c 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(75, 108, 183, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-cancel {
+  background: linear-gradient(90deg, #6c757d 0%, #5a6268 100%);
+}
+
+.btn-cancel:hover {
+  background: linear-gradient(90deg, #5a6268 0%, #4e555b 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .btn-group {
+    gap: 10px;
+  }
+}
